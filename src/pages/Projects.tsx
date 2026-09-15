@@ -10,8 +10,7 @@ export default function Projects() {
         <Reveal>
           <SectionHeading index="05" label="Projects" title="Selected work" />
           <p className="mt-4 max-w-2xl text-slate-600 dark:text-paper-100/70">
-            A mix of applied software engineering and research-oriented work. Add or edit projects
-            in <code className="font-mono text-sm">src/data/projects.ts</code>.
+            A mix of applied software engineering and research-oriented work. 
           </p>
         </Reveal>
 
