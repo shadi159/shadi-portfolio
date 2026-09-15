@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "A full-stack platform built for international student transition support, with user authentication, cross-cultural comparison tools, and a curated resource library.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript", "Full Stack"],
     githubUrl: "https://github.com/shadi159/WEB_Project",
-    image: "/public/edubridge.jpeg",
+    image: "/edubridge.jpeg",
     overview:
       "EduBridge is a web platform designed to help international students transition more smoothly into new academic and cultural environments. It brings together practical resources, comparison tools, and personalized support features in one experience.",
     problem:
