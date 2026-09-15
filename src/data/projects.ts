@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "A full-stack platform built for international student transition support, with user authentication, cross-cultural comparison tools, and a curated resource library.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript", "Full Stack"],
     githubUrl: "https://github.com/shadi159/WEB_Project",
-    image: "/public/edubridge.jpg",
+    image: "/public/edubridge.jpeg",
     overview:
       "EduBridge is a web platform designed to help international students transition more smoothly into new academic and cultural environments. It brings together practical resources, comparison tools, and personalized support features in one experience.",
     problem:
@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "An AI-powered plant monitoring platform that tracks plant health using IoT sensors, live dashboards, alerts, and a Gemini-powered RAG chatbot.",
     technologies: ["Python", "Firebase", "Microservices", "AI", "IoT"],
     githubUrl: "https://github.com/shadi159/Cloud-Computing-Project",
-    image: "/public/AgriVision.jpg",
+    image: "/public/AgriVision.jpeg",
     overview:
       "AgriVision is a cloud-based plant health monitoring application that combines real-time sensor data, automation, and AI assistance to support more informed agricultural decision-making.",
     problem:
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       "A research project that models images as weighted graphs and uses the Graph Laplacian spectrum to classify texture types, with a Spectral-MLP hybrid approach.",
     technologies: ["Python", "NumPy", "MATLAB", "Image Processing", "Machine Learning"],
     githubUrl: "https://github.com/shadi159/Final-Project-Mathematics",
-    image: "/public/Textures.jpg",
+    image: "/public/Textures.jpeg",
     overview:
       "This project explores how image textures can be analyzed using graph-based mathematical representations. It models images as weighted graphs and studies the Graph Laplacian spectrum to distinguish between smooth and stochastic textures.",
     problem:
@@ -103,7 +103,7 @@ export const projects: Project[] = [
       "A data-driven NLP system for detecting social and political shifts in Arabic Twitter discourse using n-grams, feature selection, temporal analysis, and clustering.",
     technologies: ["Python", "NLP", "Deep Learning", "BERT", "Feature Selection", "Clustering"],
     githubUrl: "https://github.com/shadi159/Final-Project",
-    image: "/public/SocialChange.jpg",
+    image: "/public/SocialChange.jpeg",
     overview:
       "This project analyzes Arabic social media discourse to detect periods of social or political transformation. It combines NLP and statistical methods to identify temporal shifts in online conversations and relate them to broader change events.",
     problem:
