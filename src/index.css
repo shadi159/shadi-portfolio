@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper-100 text-ink-900 antialiased font-body transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-ink-900 text-paper-100;
+  }
+
+  ::selection {
+    @apply bg-cobalt-500/20 text-cobalt-700;
+  }
+
+  /* Visible focus states for keyboard navigation */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    @apply outline-none ring-2 ring-cobalt-500 ring-offset-2 ring-offset-paper-100;
+  }
+
+  .dark a:focus-visible,
+  .dark button:focus-visible,
+  .dark input:focus-visible,
+  .dark textarea:focus-visible {
+    @apply ring-offset-ink-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  /* Comment-style eyebrow label, e.g. "// 01 About" — encodes section order like code comments */
+  .section-label {
+    @apply font-mono text-xs sm:text-sm uppercase tracking-widest text-cobalt-500 dark:text-cobalt-400;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .card-surface {
+    @apply bg-white dark:bg-ink-800 border border-paper-300 dark:border-ink-600 rounded-xl;
+  }
+
+  .btn-base {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-semibold transition-all duration-200 focus-visible:outline-none disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply btn-base bg-cobalt-500 text-white hover:bg-cobalt-600 active:scale-[0.98] shadow-sm shadow-cobalt-500/20;
+  }
+
+  .btn-secondary {
+    @apply btn-base border border-ink-900/15 dark:border-paper-100/20 text-ink-900 dark:text-paper-100 hover:bg-ink-900/5 dark:hover:bg-paper-100/10 active:scale-[0.98];
+  }
+
+  .placeholder-tag {
+    @apply inline-flex items-center rounded border border-dashed border-amber-500/60 bg-amber-500/10 px-2 py-0.5 font-mono text-[11px] font-medium text-amber-500;
+  }
+
+  .fade-up {
+    opacity: 0;
+    animation: fade-up 0.7s ease-out forwards;
+  }
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
